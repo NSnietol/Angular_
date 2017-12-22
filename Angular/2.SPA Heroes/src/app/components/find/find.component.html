@@ -1,0 +1,47 @@
+<div class="aspectoVisual">
+
+
+
+<h4> Buscando : <small> {{parametros}}</small> </h4>
+<hr>
+
+<div *ngIf="heroes.length<1==true" class="row">
+  <div class="col-md-12">
+
+    <div class="alert alert-info " role="alert">
+      <h4>No existen resultados para el término : <small> {{parametros}} </small></h4>
+
+
+    </div>
+
+  </div>
+
+
+</div>
+
+<div class="card-columns">
+
+  <div class="card animated fadeIn fast"  *ngFor="let heroe of heroes; let idx = index">
+   <a (click)="verHeroe(heroe.id)"> 
+     
+      <img class="card-img-top img-fluid" src="{{heroe.img}}" alt="{{heroe.nombre}}">
+  </a>
+
+
+    <p></p>
+    <div class="card-block">
+      <h4 class="card-title">{{ heroe.nombre}}</h4>
+      <p class="card-text"> {{ heroe.bio }} </p>
+      <p class="card-text"><small class="text-nuted"> {{heroe.aparicion}} </small></p>
+     <button (click)="verHeroe(heroe.id)"
+     type="button" class="btn btn-outline-primary btn-block">Ver más</button> 
+
+    <!-- <a [routerLink]=" ['/Heroe',idx]" class="btn btn-outline-primary">ver más</a> -->
+    </div>
+  </div>
+
+
+</div>
+
+
+</div>
