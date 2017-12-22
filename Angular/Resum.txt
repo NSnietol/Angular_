@@ -1,5 +1,5 @@
-Componentes: son clases que cumplen funciones puntuales ( Mostrar Información, realizar busquedas,mene de navegación)
+Componentes: son clases que cumplen funciones puntuales ( Mostrar InformaciÃ³n, realizar busquedas,mene de navegaciÃ³n)
 
 Directivas estructurales: instrucciones que indican al HTML que hacer
 	*ngif = se encarga de mostrar/Ocultar elementos HTML
-	ngfoc = repeti elementos HMTL 	
+	ngfor = repetir elementos HMTL 	
