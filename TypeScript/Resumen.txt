@@ -1,0 +1,7 @@
+Para hacer que se guarden los cambios mediante la depuración se usa 
+
+tsc "app" -w si se va a espesificar un solo archivo  
+
+
+tsc -init  para observar todo el proyecto
+tsc para crear los js de los Ts

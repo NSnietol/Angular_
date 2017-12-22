@@ -1,0 +1,39 @@
+<div class="row">
+  <div class="col-md-6">
+      <h1>ngIF</h1>
+      <hr>
+      <button type="button" class="btn btn-outline-primary block"
+        (click)="mostrar=!mostrar"
+      >mostar/ocultar</button>
+      <hr>
+      <div *ngIf="mostrar" class="card text-white bg-primary mb-3" style="max-width: 20rem;">
+  <div class="card-header">Header</div>
+  <div class="card-body">
+    <h4 class="card-title">{{frase.autor}}</h4>
+    <p class="card-text">{{frase.mensaje}}</p>
+  </div>
+</div>
+  </div>
+  <div class="col-md-6">
+      <h1>ngFor</h1>
+      <hr>
+      <ul class="list-group">
+        <li *ngFor="let item of personajes ; let i = index" class="list-group-item">
+
+          {{i+1}}. {{item}}</li>
+
+        </ul>
+  </div>
+
+</div>
+
+<!-- <div class="jumbotron">
+  <h1 class="display-3">Hello, world!</h1>
+  <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+  <hr class="my-4">
+  <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+  <p class="lead">
+    <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+  </p>
+</div>
+-->
