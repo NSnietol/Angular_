@@ -1,6 +1,9 @@
-# HolaMundo
+# SPA Heroes
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.4.0.
+
+## Requirement
+Before execute ng serve, execute nmp install.
 
 ## Development server
 
