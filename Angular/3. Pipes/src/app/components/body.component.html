@@ -1,0 +1,184 @@
+<div class="container">
+<br>
+<h1>Pipes</h1>
+<br>
+
+<table class="table">
+    <thead class="thead-inverse">
+      <tr>
+          <th>Variable</th>
+          <th>Pipe</th>
+          <th>Producto</th>
+  
+      </tr>
+
+    </thead>
+    <tbody>
+      <tr>
+     
+        <td>{{name}}</td>
+        <td>Uppercase</td>
+        <td>{{name | uppercase}}</td>
+
+      </tr>
+
+      <tr>
+          
+             <td>{{name}}</td>
+             <td>lowercase</td>
+             <td>{{name | lowercase}}</td>
+     
+           </tr>
+     
+
+           <tr>
+              
+                 <td>{{name}}</td>
+                 <td>slice:3</td>
+                 <!--Elimina caracteres -->
+                 <td>{{name | slice:3}}</td>
+         
+               </tr>
+
+               <tr>
+                  
+                     <td>{{name}}</td>
+                     <td>slice:0:3</td>
+                     <!--Elimina caracteres -->
+                     <td>{{name | slice:0:3}}</td>
+             
+                   </tr>
+    
+                   <tr>
+                      
+                         <td>{{arreglo}}</td>
+                         <td>slice:2:6</td>
+                         <!--Elimina caracteres -->
+                         <td>{{arreglo | slice:2:6}}</td>
+                 
+                       </tr>
+
+                  
+                       <tr>
+                        
+                           <td>{{PI}}</td>
+                           <td>number</td>
+                           <!--Elimina caracteres -->
+                           <td>{{PI | number}}</td>
+                   
+                         </tr>
+
+                         <tr>
+                          
+                             <td>{{PI}}</td>
+                             <td>number:'3.1-4'</td>
+                             <!--Elimina caracteres -->
+                             <td>{{PI | number:'3.1-4'}}</td>
+                     
+                           </tr>
+
+                           <tr>
+                            
+                               <td>{{valor}}</td>
+                               <td>percent</td>
+                               <!--Elimina caracteres -->
+                               <td>{{valor |percent}}</td>
+                       
+                             </tr>
+        
+                             
+                           <tr>
+                            
+                               <td>{{salario}}</td>
+                               <td>currency</td>
+                               <!--Elimina caracteres -->
+                               <td>{{salario |currency}}</td>
+                       
+                             </tr>
+
+                                  
+                           <tr>
+                            
+                               <td>{{salario}}</td>
+                               <td>currency:'EUR'</td>
+                               <!--Elimina caracteres -->
+                               <td>{{salario |currency:'EUR'}}</td>
+                       
+                             </tr>
+        
+
+                             <tr>
+                              
+                                 <td>{{hoy}}</td>
+                                 <td>date</td>
+                                 <!--Elimina caracteres -->
+                                 <td>{{hoy | date}}</td>
+                         
+                               </tr>
+                               
+                             <tr>
+                              
+                                 <td>{{hoy}}</td>
+                                 <td>date:'medium'</td>
+                                 <!--Elimina caracteres -->
+                                 <td>{{hoy | date:'medium'}}</td>
+                         
+                               </tr>
+          
+                                    
+                             <tr>
+                              
+                                 <td>{{hoy}}</td>
+                                 <td>date:'d - MMMM'</td>
+                                 <!--Elimina caracteres -->
+                                 <td>{{hoy | date:'d-MMMM'}}</td>
+                         
+                               </tr>
+          
+  
+                                            
+                             <tr>
+                              
+                                 <td></td>
+                                 <td>Domseguro, está en pipes</td>
+                                 <!--Elimina caracteres -->
+                                 <td>{{donseguro}}</td>
+                         
+                               </tr>
+          
+  
+
+                                            
+                               <tr>
+                                
+                                   <td>{{name}}</td>
+                                   <td>estado :{{estado}}</td>
+                                   <!--Elimina caracteres -->
+                                   <td>{{name | contrasena:estado}}</td>
+                                   <button 
+                                   (click)="estado=!estado"
+                                   type="button"
+                                   class="btn btn-outline-primary">Activar/Desactivar
+
+                                   </button>
+                           
+                                 </tr>
+
+        
+
+    </tbody>
+
+
+
+</table>
+
+
+<div>
+ Json Pipe
+ 
+  <pre>{{heroe | json}}</pre>
+
+</div>
+
+
+</div>
