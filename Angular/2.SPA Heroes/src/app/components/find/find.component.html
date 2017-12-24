@@ -2,19 +2,20 @@
 
 
 
-<h4> Buscando : <small> {{parametros}}</small> </h4>
+<h4 *ngIf="heroes.length>1==true" > Buscando : <small> {{parametros}}</small> </h4>
 <hr>
 
-<div *ngIf="heroes.length<1==true" class="row">
-  <div class="col-md-12">
-
-    <div class="alert alert-info " role="alert">
-      <h4>No existen resultados para el término : <small> {{parametros}} </small></h4>
+<div *ngIf="heroes.length<1==true" class="row text-center">
 
 
-    </div>
-
-  </div>
+    <div class="card border-primary mb-3" style="max-width: 20rem;">
+        <div class="card-header">Sin resultados </div>
+        <div class="card-body text-primary">
+          <h4 class="card-title"></h4>
+          <p class="card-text">No existen resultados para el término :  {{parametros}} </p>
+        </div>
+      </div>
+    
 
 
 </div>

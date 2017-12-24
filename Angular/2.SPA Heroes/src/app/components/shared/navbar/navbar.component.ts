@@ -16,8 +16,9 @@ export class NavbarComponent implements OnInit {
 
   public buscarHeroe(cadena:string){
 
-    console.log(cadena);
-    this.router.navigate(['Find',cadena])
+    if(cadena.toString().length>0){
+      this.router.navigate(['Find',cadena]);
+    }
 
   }
 

@@ -19,9 +19,6 @@ export class HeroeComponent implements OnInit {
         this.heroe=this._hereos.getHeroe(params['id']);
 
 
-          this._hereos.getHereos().length
-        console.log(this.heroe);
-
     });
     
    }
