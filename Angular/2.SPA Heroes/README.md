@@ -1,9 +1,17 @@
 # SPA Heroes
+<<<<<<< HEAD
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.4.0.
 
 ##Requirements
 Before execute this project, execute nmp install.
 
+=======
+
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.4.0.
+
+## Requirement
+Before execute ng serve, execute nmp install.
+>>>>>>> 5f03c7ef550d0dd335c92bfb50eec37ac6dacd8d
 
 ## Development server
 
