@@ -1,0 +1,33 @@
+
+<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+      
+
+      <li data-target="#carouselExampleIndicators" *ngFor="let slice of slices; let idx = index" data-slide-to="idx" class="active"></li>
+    
+      
+     
+    </ol>
+
+    <div class="carousel-inner">
+
+    
+
+          <div class="carousel-item active"  [ngStyle]="{ 'background-image': 'url(' + getActiveItem().url + ')'}"></div>
+          
+
+           
+              <div class="carousel-item "  *ngFor="let slice of  getItems(); let idx = index"   [ngStyle]="{ 'background-image': 'url(' + slice.url + ')'}"></div>
+
+     
+    </div>
+    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+
